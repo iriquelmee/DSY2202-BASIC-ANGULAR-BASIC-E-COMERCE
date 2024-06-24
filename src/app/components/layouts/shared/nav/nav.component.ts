@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import {nav} from '../../../../data/index';
+import {CartComponent} from '../cart/cart.component';
+import { RouterLink } from '@angular/router';
+
+RouterLink
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [],
+  imports: [RouterLink, CartComponent],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
