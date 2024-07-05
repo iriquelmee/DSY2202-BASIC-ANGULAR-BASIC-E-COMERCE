@@ -40,6 +40,7 @@ export const accordion = {
 
 export const productos = [
   {
+    itemId:"",
     id: 1,
     nombre: "Monopoly",
     descripcion: "El clásico juego de compra y venta de propiedades.",
@@ -49,6 +50,7 @@ export const productos = [
     img: 'assets/img/game-1.png'
   },
   {
+    itemId:"",
     id: 2,
     nombre: "Uno",
     descripcion: "Un emocionante juego de cartas donde debes deshacerte de todas tus cartas.",
@@ -58,6 +60,7 @@ export const productos = [
     img: 'assets/img/game-2.png'
   },
   {
+    itemId:"",
     id: 3,
     nombre: "Mesa de Ajedrez",
     descripcion: "Una mesa de ajedrez de madera con tablero y piezas.",

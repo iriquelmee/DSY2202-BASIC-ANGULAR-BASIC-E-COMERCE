@@ -38,8 +38,8 @@ export class CartComponent implements OnInit {
   }
 
   // agregando producto al carro.
-  addProduct(productId: number) {
-    const product = productos.find(p => p.id === productId);
+  addProduct(productId: string) {
+    const product = productos.find(p => p.itemId === productId);
     if (product) {
       this.cartService.addItem(product);
       this.updateCartState();
@@ -56,8 +56,8 @@ export class CartComponent implements OnInit {
   }
 
   //remover producto del carrito
-  removeProduct(productId: number){
-    this.cartService.removeItem(productId);
+  removeProduct(itemId: string){
+    this.cartService.removeItem(itemId);
     this.updateCartState();
     alert('¡Producto eliminado del carrito!');
   }

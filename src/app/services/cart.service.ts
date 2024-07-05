@@ -21,12 +21,13 @@ export class CartService {
 
   addItem(product: CartItem): void {
     const cart = this.getCart();
-    cart.push(product);
+    const newItem: CartItem = { ...product, itemId: Date.now().toString() };
+    cart.push(newItem);
     this.saveCart(cart);
   }
-  removeItem(productId: number): void {
+  removeItem(itemId: string): void {
     let cart = this.getCart();
-    cart = cart.filter(item => item.id !== productId);
+    cart = cart.filter(item => item.itemId !== itemId);
     this.saveCart(cart);
   }
 

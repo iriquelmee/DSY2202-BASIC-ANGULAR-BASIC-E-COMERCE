@@ -9,7 +9,7 @@
     <div class="row">
       <div class="col-12">
         <div class="card mb-3">
-            @for(item of cartItems; track item.id)
+            @for(item of cartItems; track item.itemId)
             {
                 <div class="card-body">
                     <h5 class="card-title">{{ item.nombre }}</h5>
@@ -17,7 +17,7 @@
                     <p class="card-text">Precio Unitario: {{ item.precio }}</p>
                     <p class="card-text">Stock Disponible: {{ item.stock }}</p>
                     <p class="card-text">Subtotal: {{ item.precio }}</p>
-                    <button class="btn btn-danger" (click)="removeProduct(item.id)">Eliminar</button>
+                    <button class="btn btn-danger" (click)="removeProduct(item.itemId)">Eliminar</button>
                 </div>
             }
         </div>
