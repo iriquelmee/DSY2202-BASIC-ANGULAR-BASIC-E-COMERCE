@@ -7,33 +7,22 @@ export const nav = [
 
 export const accordion = {
   title: 'Preguntas frecuentes',
-  subtitle:
-    'Todo lo que necesitas saber sobre Table Top',
+  subtitle: 'Todo lo que necesitas saber sobre Table Top',
   faqs: [
     {
       id: 0,
       que: "¿Cuáles son los medios de pago aceptados?",
-      res: "Los únicos requisitos son un computador con navegador web e internet, para poder acceder a la plataforma. Para los repartidores, deben usar Android 8.0 o superior.",
+      res: "Aceptamos tarjetas de crédito y débito Visa, MasterCard y American Express. También puedes pagar con PayPal.",
     },
     {
       id: 1,
-      que: "¿Realmente puedo tener el control total?",
-      res: "Los únicos requisitos son un computador con navegador web e internet, para poder acceder a la plataforma. Para los repartidores, deben usar Android 8.0 o superior.",
+      que: "¿Qué requisitos necesito para comprar en Table Top?",
+      res: "Solo necesitas un computador con acceso a internet y un navegador web actualizado.",
     },
     {
       id: 2,
-      que: "¿Qué pasa si un cliente ya no trabaja conmigo? ¿Puedo bloquearle el acceso?",
-      res: "Los únicos requisitos son un computador con navegador web e internet, para poder acceder a la plataforma. Para los repartidores, deben usar Android 8.0 o superior.",
-    },
-    {
-      id: 3,
-      que: "¿Qué requisitos necesito para poder usar BearTrack?",
-      res: "Los únicos requisitos son un computador con navegador web e internet, para poder acceder a la plataforma. Para los repartidores, deben usar Android 8.0 o superior.",
-    },
-    {
-      id: 4,
       que: "¿Cómo es el cobro?",
-      res: "Los únicos requisitos son un computador con navegador web e internet, para poder acceder a la plataforma. Para los repartidores, deben usar Android 8.0 o superior.",
+      res: "El cobro se realiza automáticamente a través del método de pago que hayas seleccionado al hacer tu compra.",
     },
   ],
 };
