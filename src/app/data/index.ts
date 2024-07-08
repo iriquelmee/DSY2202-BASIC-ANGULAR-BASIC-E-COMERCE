@@ -13,7 +13,7 @@ export const accordion = {
     {
       id: 0,
       que: "¿Cuáles son los medios de pago aceptados?",
-      res: "Aceptamos tarjetas de crédito y débito Visa, MasterCard y American Express. También puedes pagar con PayPal.",
+      res: "De momento solo contamos con realizacion de transferencia electronica, estamos tarbajando para ofrecerte la mejores opciones de pago, pronto te avisaremos.",
     },
     {
       id: 1,
@@ -61,11 +61,32 @@ export const productos = [
   }
 ];
 
-export const about = [
-  {
+export const about = {
+
     title: "Table Top Games",
-    introduction: "¡Bienvenido a Table Top Games, tu recurso principal para descubrir y explorar juegos de cartas y juegos de mesa!",
-    mission: "Promover la cultura de los juegos y fomentar la comunidad a través de experiencias seleccionadas de juegos de cartas y juegos de mesa.",
-    vision: "Ser el destino definitivo donde jugadores de todo tipo descubren, aprenden y participan en juegos de cartas y juegos de mesa.",
-  }
-];
+    subtitle: "¡Bienvenido a Table Top Games, tu recurso principal para descubrir y explorar juegos de cartas y juegos de mesa!",
+    items: [
+      {
+        id: 0,
+        title: "Mision",
+        image:"/assets/img/about0.png",
+        descripcion: "Promover la cultura de los juegos y fomentar la comunidad a través de experiencias seleccionadas de juegos de cartas y juegos de mesa.",
+
+      },
+      {
+        id: 1,
+        title: "Vision",
+        image: "/assets/img/about1.png",
+        descripcion: "Ser el destino definitivo donde jugadores de todo tipo descubren, aprenden y participan en juegos de cartas y juegos de mesa."
+
+      },
+      {
+        id: 2,
+        title: "Ubicacion",
+        image: "/assets/img/about2.png",
+        descripcion: "Encuentranos aqui los fines de semana."
+
+      }
+    ]
+  
+};

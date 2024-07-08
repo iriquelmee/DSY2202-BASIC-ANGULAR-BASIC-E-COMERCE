@@ -1,0 +1,28 @@
+/*Clases para mini navegacion de items en array para componente about con css */
+.btn-custom{
+    color: white;
+    background: rgb(33, 37, 41);
+}
+
+.nav-link{
+    color: rgb(33, 37, 41);;
+    background: white;
+}
+
+.active{
+    color: white;
+    background: rgb(33, 37, 41);
+}
+
+.animation {
+    animation: slideFromLeft 0.5s ease-in-out;
+  }
+
+@keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }

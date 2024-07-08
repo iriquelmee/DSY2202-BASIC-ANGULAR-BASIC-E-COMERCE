@@ -1,1 +1,35 @@
-<p>about works!</p>
+<div class="container animation">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>{{title}}</h1>
+            <p>{{subtitle}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <ul class="nav justify-content-center">
+        @for (item of items; track item.id) 
+        {
+            <li class="nav-item" >
+                <a id="ul-custom" class="nav-link rounded-pill" 
+                [class.active]="isActive(item.title)"
+                (click)="clickNav(item)">{{item.title}}</a>
+            </li>
+        }
+    </ul>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <img [src]="items[selectedMenu].image" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <br>
+            <p>{{items[selectedMenu].descripcion}}</p>
+            <br>
+            <div>
+                <a class="btn btn-block rounded-pill btn-custom">Registrate</a>
+            </div>
+        </div>
+    </div>
+</div>
