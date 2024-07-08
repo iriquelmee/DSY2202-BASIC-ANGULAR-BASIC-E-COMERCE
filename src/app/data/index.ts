@@ -3,6 +3,7 @@ export const nav = [
   { name: 'About', href: '/about' },
   { name: 'Faq', href: '/faq' },
   { name: 'Cart', href: '/cart' },
+  { name: 'Register', href: '/register' },
 ];
 
 export const accordion = {
@@ -57,5 +58,14 @@ export const productos = [
     stock: 10,
     categoria: "Juegos de Mesa",
     img: 'assets/img/game-3.png'
+  }
+];
+
+export const about = [
+  {
+    title: "Table Top Games",
+    introduction: "¡Bienvenido a Table Top Games, tu recurso principal para descubrir y explorar juegos de cartas y juegos de mesa!",
+    mission: "Promover la cultura de los juegos y fomentar la comunidad a través de experiencias seleccionadas de juegos de cartas y juegos de mesa.",
+    vision: "Ser el destino definitivo donde jugadores de todo tipo descubren, aprenden y participan en juegos de cartas y juegos de mesa.",
   }
 ];
