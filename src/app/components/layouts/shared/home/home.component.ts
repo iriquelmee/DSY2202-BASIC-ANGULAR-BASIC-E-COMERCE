@@ -2,17 +2,19 @@ import { Component } from '@angular/core';
 import { CartItem } from '../../../../models/cart-item.model';
 import { productos } from '../../../../data';
 import { CartService } from '../../../../services/cart.service';
+import { FaqComponent } from '../faq/faq.component';
+import { AboutComponent } from '../about/about.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [FaqComponent, AboutComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
-  title: string = 'Home';
+  title: string = 'Productos Disponibles';
   products = productos; // Assuming productos is your array of products
   cartItems: CartItem[] = [];
 
