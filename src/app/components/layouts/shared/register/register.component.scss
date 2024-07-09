@@ -1,0 +1,14 @@
+/* Animación para deslizar cualquier objeto que se asigne esta clase*/
+.animation {
+    animation: slideFromBottom 0.5s ease-in-out;
+}
+
+/* Animación para deslizar desde la derecha */
+@keyframes slideFromBottom {
+from {
+    transform: translateY(100%);
+}
+to {
+    transform: translateY(0);
+}
+}

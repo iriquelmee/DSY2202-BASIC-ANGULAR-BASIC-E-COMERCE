@@ -1,1 +1,42 @@
-<p>register works!</p>
+<div class="container animation">
+    <div class="row">
+        <div class="col-12 text-center">
+          <br>
+            <h1>{{title}}</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Formulario de Registro
+          </div>
+          <div class="card-body">
+            <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+              <div class="mb-3">
+                <label class="form-label">Usuario</label>
+                <input type="text" class="form-control" formControlName="username">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" formControlName="email">
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Password</label>
+                <input type="password" class="form-control" formControlName="password1">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Re Password</label>
+                <input type="password" class="form-control" formControlName="password2">
+              </div>
+              <button type="submit" class="btn btn-primary" [disabled]="registroForm.invalid">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
