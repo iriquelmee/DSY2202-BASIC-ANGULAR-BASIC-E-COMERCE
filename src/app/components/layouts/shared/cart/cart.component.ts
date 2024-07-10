@@ -10,6 +10,7 @@ import { CartItem } from '../../../../models/cart-item.model';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
+  title:string = "Carrito de Compras";
   cartItems: CartItem[] = [];
   total: number = 0;
 

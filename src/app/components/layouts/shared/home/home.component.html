@@ -1,3 +1,11 @@
+<div class="container">
+    <app-about></app-about>
+</div>
+<div class="container">
+    <br>
+    <hr>
+    <br>
+</div>
 <div class="container animation">
     <div class="row">
         <div class="col-12 text-center">
@@ -5,12 +13,15 @@
         </div>
     </div>
 </div>
-
+<div class="container">
+    <br>
+    <br>
+</div>
 <div class="container">
     <div class="row">
         @for(product of products; track product.id){
             <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card">
+                <div class="card animation">
                     <img [src]="product.img" class="card-img-top" alt="Product Image">
                     <div class="card-body">
                         <h5 class="card-title">{{ product.nombre }}</h5>
@@ -23,11 +34,11 @@
         }
     </div>
 </div>
-
+<div class="container">
+    <br>
+    <hr>
+    <br>
+</div>
 <div class="container">
     <app-faq></app-faq>
-</div>
-
-<div class="container">
-    <app-about></app-about>
 </div>
