@@ -14,13 +14,16 @@ RUN npm install
 COPY . .
 
 # Construyendo app para produccion
-RUN npm run build --prod
+RUN npm run build
 
 # Usaremos NGINX  para desplegar angular app
 FROM nginx:latest
 
 # copiando NGIX image del paso anterior
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /app/dist/e-core /usr/share/nginx/html
+
+# Copy custom NGINX configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # servir en puerto 80
 EXPOSE 80
